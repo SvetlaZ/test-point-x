@@ -1,6 +1,6 @@
 import React from 'react';
-import Tasks from '../Tasks/Tasks'
-import Chart from '../Chart/Chart'
+import Tasks from '../Tasks/Tasks';
+import Chart from '../Chart/Chart';
 import MainWrapper from './MainWrapper';
 
 import facebook from '../../picture/facebook.svg';
