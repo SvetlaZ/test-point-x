@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const TasksWrapper = styled.div`
+  margin-bottom: 110px;
 
   .tasks-header {
     display: flex;

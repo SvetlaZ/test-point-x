@@ -2,6 +2,11 @@ import React from 'react';
 import Tasks from '../Tasks/Tasks'
 import MainWrapper from './MainWrapper';
 
+import facebook from '../../picture/facebook.svg';
+import twitter from '../../picture/twitter.svg';
+import linkedin from '../../picture/linkedin.svg';
+import telegram from '../../picture/telegram.svg';
+
 const Main = (props) => {
   return (
     <MainWrapper>
@@ -28,13 +33,14 @@ const Main = (props) => {
       <Tasks />
 
       <div className="footer">
-        Footer
         <div>
           <p>© 2020 SIA "Point-X", Go World! Go EU! Made with in Latvia LV40203240033</p>
-          <a href="https://www.facebook.com/"><img src={} alt="facebook" /></a>
-          <a href="https://twitter.com/"><img src={} alt="twitter" /></a>
-          <a href="https://linkedin.com/"><img src={} alt="linledin" /></a>
-          <a href="https://web.telegram.org/"><img src={} alt="telegram" /></a>
+          <a href="https://www.facebook.com/"><img src={facebook} alt="facebook" /></a>
+          <a href="https://twitter.com/"><img src={twitter} alt="twitter" /></a>
+          <a href="https://linkedin.com/"><img src={linkedin} alt="linkedin" /></a>
+          <a href="https://web.telegram.org/"><img src={telegram} alt="telegram" /></a>
+          <a href="/#">Terms of Service</a>
+          <a href="/#">Privacy Policy</a>
         </div>
       </div>
     </MainWrapper>

@@ -9,7 +9,10 @@ const Task = ({question, number, status, quantity, medal, result}) => {
     <TaskWrapper>
       <div className="block-question">
         <p className="task-question">{question}</p>
-        <p className="number">{number}</p>
+        {number !== 0 ? 
+          <p className="number">{number}</p>
+          : null
+        }
       </div>
       <p className="status">{status}</p>
 

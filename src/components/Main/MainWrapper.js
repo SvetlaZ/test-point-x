@@ -88,10 +88,24 @@ const MainWrapper = styled.div`
 
     div {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       width: 1300px;
       height: 65px;
+
+      p {
+        width: 50%;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #A2ACC0;
+      }
+
+      a {
+        text-decoration: none;
+      }
     }
   }
   `;
