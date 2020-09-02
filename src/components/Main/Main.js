@@ -1,5 +1,6 @@
 import React from 'react';
 import Tasks from '../Tasks/Tasks'
+import Chart from '../Chart/Chart'
 import MainWrapper from './MainWrapper';
 
 import facebook from '../../picture/facebook.svg';
@@ -26,9 +27,7 @@ const Main = (props) => {
         <div className="rect-s"></div>
       </div>
 
-      <div className="schedule">
-        График
-      </div>
+      <Chart />
 
       <Tasks />
 

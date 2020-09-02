@@ -71,17 +71,6 @@ const MainWrapper = styled.div`
     }
   }
 
-
-  .schedule {
-    height: 448px;
-    background: red;
-  }
-
-  .tasks {
-    height: 753px;
-    background: green;
-  }
-
   .footer {
     width: 100%;
     background: #FFFFFF;
