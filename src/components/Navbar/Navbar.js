@@ -2,12 +2,13 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import NavbarWrapper from './NavbarWrapper';
 
-import shape from '../picture/shape.svg'
-import logo from '../picture/logo.svg'
+import shape from '../../picture/shape.svg'
+import logo from '../../picture/logo.svg'
 
 const Navbar = props => {
   return (
     <NavbarWrapper>
+      <nav>
         <div className="navbar-brand">
           <img src={shape} alt="shape" />
           <div className="navbar-brand-text">
@@ -40,6 +41,7 @@ const Navbar = props => {
             <span className="navbar-name-status">Administrator</span>
           </div>
         </div>
+      </nav>
     </NavbarWrapper>
   );
 };
