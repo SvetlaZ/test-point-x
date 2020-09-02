@@ -57,12 +57,15 @@ const NavbarWrapper = styled.div`
           color: #336BEC;
         }
         .goodItems {
+          display: inline-block;
+          margin-left: 10px;
           color: #FFFFFF;
+          text-align: center;
           font-family: Inter;
           font-style: normal;
           font-weight: 600;
           font-size: 12px;
-          line-height: 15px;
+          line-height: 24px;
           width: 34px;
           height: 24px;
           background: #FF2C9C;

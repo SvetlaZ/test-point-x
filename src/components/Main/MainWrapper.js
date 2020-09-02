@@ -2,6 +2,61 @@ import styled from 'styled-components';
 
 const MainWrapper = styled.div`
   width: 1300px;
+
+  h2 {
+    font-family: Cheyenne Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    color: #1E266D;
+    margin-top: 41px;
+    margin-bottom: 10px;
+  }
+
+  .block-text {
+    display: flex;
+    margin-bottom: 45px;
+    justify-content: space-between;
+
+    button {
+      width: 150px;
+      height: 40px;
+      color: #FFFFFF;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      background: #336BEC;
+      border-radius: 4px;
+      border: none;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+  }
+
+  .text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #455880;
+    margin: 0;
+
+    span {
+      color: #0056D3;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
   .group-rect {
     display: flex;
     .rect, .rect-s {
@@ -16,6 +71,7 @@ const MainWrapper = styled.div`
     }
   }
 
+
   .schedule {
     height: 448px;
     background: red;
@@ -28,8 +84,15 @@ const MainWrapper = styled.div`
 
   .footer {
     width: 100%;
-    height: 65px;
     background: #FFFFFF;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1300px;
+      height: 65px;
+    }
   }
   `;
 
