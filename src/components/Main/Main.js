@@ -8,6 +8,9 @@ import twitter from '../../picture/twitter.svg';
 import linkedin from '../../picture/linkedin.svg';
 import telegram from '../../picture/telegram.svg';
 
+import ProgressBar from 'react-customizable-progressbar'
+import check from '../../picture/check.svg';
+
 const Main = (props) => {
   return (
     <MainWrapper>
@@ -22,7 +25,20 @@ const Main = (props) => {
       </div>
 
       <div className="group-rect">
-        <div className="rect"></div>
+        <div className="rect">
+          <ProgressBar
+              progress={50}
+              radius={51}
+              trackStrokeWidth={10}
+              strokeWidth={10}
+              trackStrokeColor={'rgba(255, 255, 255, 0.3)'}
+              strokeColor={'#FFFFFF'}
+              strokeLinecap={'straight'}
+          ><div className="indicator">
+            <div>2/4</div>
+          </div></ProgressBar>
+          <p><img src={check} alt="check" />Active campaigns</p>
+        </div>
         <div className="rect-s"></div>
         <div className="rect-s"></div>
       </div>

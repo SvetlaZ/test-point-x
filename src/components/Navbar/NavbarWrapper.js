@@ -15,7 +15,7 @@ const NavbarWrapper = styled.div`
 
     .navbar-brand {
       display: flex;
-      width: 10%;
+      width: 15%;
       img {
         margin-right: 12px;
       }
@@ -39,7 +39,7 @@ const NavbarWrapper = styled.div`
 
     .navbar-nav {
       display: flex;
-      width: 75%;
+      width: 68%;
       .nav-item {
         list-style-type: none;
         margin-right: 30px;

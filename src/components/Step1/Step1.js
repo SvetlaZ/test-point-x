@@ -1,5 +1,5 @@
 import React from 'react';
-
+import car from '../../picture/car.svg'
 import Step1Wrapper from './Step1Wrapper';
 
 const Step1 = (props) => {
@@ -16,9 +16,21 @@ const Step1 = (props) => {
           <li className="choose">1. General</li>
           <li>2. Questionnaire </li>
           <li>3. Details and check</li>
-        </ul>  
-      </div>
+        </ul>
 
+        <div className="title">
+          <p>title</p>
+          <input value="Super poll for token lovers 28/50" />
+          <span>Tasks main title</span>
+        </div>
+
+        <div className="category">
+          <p>category</p>
+          <select>
+            <option><img src={car} alt="car" /> Transport</option>
+        </select>
+        </div>
+      </div>
       <div className="glossary">
       <h2>Glossary</h2>
         <ul>

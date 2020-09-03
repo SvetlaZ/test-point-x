@@ -69,6 +69,43 @@ const MainWrapper = styled.div`
     .rect-s {
       width: 403px;
     }
+
+    .rect {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+      .indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 34px;
+        color: #F7F7F7;;
+        user-select: none;
+    }
+    }
   }
 
   .footer {

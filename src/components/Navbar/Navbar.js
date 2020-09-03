@@ -4,6 +4,7 @@ import NavbarWrapper from './NavbarWrapper';
 
 import shape from '../../picture/shape.svg'
 import logo from '../../picture/logo.svg'
+import settings from '../../picture/settings.svg'
 
 const Navbar = props => {
   return (
@@ -41,6 +42,7 @@ const Navbar = props => {
             <span className="navbar-name-status">Administrator</span>
           </div>
         </div>
+        <div className="settings"><img src={settings} alt="settings" /></div>
       </nav>
     </NavbarWrapper>
   );
