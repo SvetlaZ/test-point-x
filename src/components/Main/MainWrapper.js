@@ -129,6 +129,37 @@ const MainWrapper = styled.div`
         }
       }
     }
+
+    .graph {
+      display: flex;
+      flex-direction: column;
+      margin: 15px 25px 0;
+
+      p {
+        margin-top: 25px
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 17px;
+        color: #455880;
+      }
+
+      .down {
+        font-size: 12px;
+        line-height: 15px;
+        color: #EB5757;
+      }
+
+      .cost {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        color: #1E266D;
+      }
+    }
   }
 
   .footer {

@@ -15,6 +15,7 @@ import Card from '../Card/Card'
 import quantity from '../../picture/quantity.svg';
 import view from '../../picture/view.svg';
 import label from '../../picture/label.svg';
+import graph from '../../picture/graph.svg';
 
 const Main = (props) => {
   return (
@@ -62,7 +63,18 @@ const Main = (props) => {
             </div>
           }
         />
-        <Card />
+        <Card 
+          children={
+            <div className="graph">
+              <img src={graph} alt="graph" />
+              <p className="cost">12,500.0 Px (€)</p>
+              <div>
+                <span>Totaly expenses</span>
+                <span className="down">↓ 13%</span>
+              </div>
+            </div>
+          }
+        />
       </div>
 
       <Chart />
