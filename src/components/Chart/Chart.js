@@ -12,7 +12,7 @@ const Chart = (props) => {
     datasets: [
       {
         label: 'participants',
-        data: [25, 15, 17, 20, 15, 12, 20, 23, 17, 20, 30, 25, 38, 40, 30],
+        data: [25, 15, 17, 20, 15, 12, 20, 23, 17, 20, 30, 25, 38, 39, 30],
         borderColor: ['rgba(56, 108, 233, 1)'],
         backgroundColor: ['rgba(56, 108, 233, 0.1)'],
         pointBackgroundColor: 'rgba(56, 108, 233, 0)',
@@ -23,7 +23,7 @@ const Chart = (props) => {
 
   const options = {
     title: {
-      display: true,
+      display: false,
       text: 'Line'
     },
     scales: {
@@ -36,7 +36,10 @@ const Chart = (props) => {
           }
         }
       ]
-    }
+    },
+    legend: {
+      display: false,
+    },
   }
 
   return (
@@ -57,7 +60,7 @@ const Chart = (props) => {
         </BadgeList>
       </div>
       <hr />
-      <Line data={data} options={options} />
+      <Line height={70} data={data} options={options} />
     </ChartWrapper>
   );
 }

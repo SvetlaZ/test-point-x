@@ -75,7 +75,7 @@ const Main = (props) => {
           />
         </div>
 
-        <Chart />
+        <Chart height="60" />
 
         <Tasks />
       </div>
