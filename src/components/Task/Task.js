@@ -3,6 +3,7 @@ import quantityPic from '../../picture/quantity.svg'
 import medalPic from '../../picture/medal.svg'
 
 import TaskWrapper from './TaskWrapper';
+var classNames = require('classnames');
 
 const Task = ({question, number, status, quantity, medal, result}) => {
   return (
@@ -14,7 +15,7 @@ const Task = ({question, number, status, quantity, medal, result}) => {
           : null
         }
       </div>
-      <p className="status">{status}</p>
+      <p className={classNames("status", status)}>{status}</p>
 
       <div className="block-quantity">
         <img src={quantityPic} alt="quantity" />

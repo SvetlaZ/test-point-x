@@ -1,5 +1,6 @@
 import React from 'react';
-import car from '../../picture/car.svg'
+import {Link} from 'react-router-dom';
+// import car from '../../picture/car.svg'
 import Step1Wrapper from './Step1Wrapper';
 
 const Step1 = (props) => {
@@ -9,7 +10,7 @@ const Step1 = (props) => {
         <div className="block-nav">
           <h2>Create new task</h2>
           <p className="delete">Delete Draft</p>
-          <p  className="back">Back to dashboard</p>
+          <Link to="/"><p  className="back">Back to dashboard</p></Link>
         </div>
 
         <ul className="steps">
@@ -20,14 +21,14 @@ const Step1 = (props) => {
 
         <div className="title">
           <p>title</p>
-          <input value="Super poll for token lovers 28/50" />
+          <input value="Super poll for token lovers 28/50" onChange={(event) => event.target.value} />
           <span>Tasks main title</span>
         </div>
 
         <div className="category">
           <p>category</p>
           <select>
-            <option><img src={car} alt="car" /> Transport</option>
+            <option>Transport</option>
         </select>
         </div>
       </div>

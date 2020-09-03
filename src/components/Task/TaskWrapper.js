@@ -61,7 +61,16 @@ const TaskWrapper = styled.div`
   }
 
   .status {
-    color: grey;
+    color: #27AE60;
+    font-weight: 600;
+  }
+
+  .Draft {
+    color: #A2ACC0;
+  }
+
+  .Moderation {
+    color: #F2C94C;
   }
 
   .result {
