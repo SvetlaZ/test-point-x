@@ -59,15 +59,13 @@ const MainWrapper = styled.div`
 
   .group-rect {
     display: flex;
-    .rect, .rect-s {
+    margin-bottom: 60px;
+    .rect {
       width: 422px;
       height: 245px;
       background: #0056D3;
       border-radius: 10px;
       margin-right: 20px;
-    }
-    .rect-s {
-      width: 403px;
     }
 
     .rect {
@@ -104,7 +102,32 @@ const MainWrapper = styled.div`
         line-height: 34px;
         color: #F7F7F7;;
         user-select: none;
+      }
     }
+
+    .rect-table {
+      display: flex;
+      flex-direction: column;
+
+      div {
+        margin: 0 25px;
+
+        .category {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          color: #1E266D;
+
+          span {
+            margin-left: 25px;
+            font-size: 12px;
+            line-height: 15px;
+            color: #10B269;
+          }
+        }
+      }
     }
   }
 

@@ -11,6 +11,11 @@ import telegram from '../../picture/telegram.svg';
 import ProgressBar from 'react-customizable-progressbar'
 import check from '../../picture/check.svg';
 
+import Card from '../Card/Card'
+import quantity from '../../picture/quantity.svg';
+import view from '../../picture/view.svg';
+import label from '../../picture/label.svg';
+
 const Main = (props) => {
   return (
     <MainWrapper>
@@ -39,8 +44,25 @@ const Main = (props) => {
           </div></ProgressBar>
           <p><img src={check} alt="check" />Active campaigns</p>
         </div>
-        <div className="rect-s"></div>
-        <div className="rect-s"></div>
+        <Card line={true} up={true}
+          children={
+            <div className="rect-table">
+              <div>
+                <p className="category">Participiants <span>↑ 67%</span></p>
+                <p className="growth"><img src={quantity} alt="quantity" />+ 12,827</p>
+              </div>
+              <div>
+                <p className="category">Views <span>↑ 13%</span></p>
+                <p className="growth"><img src={view} alt="view" />+ 121,371</p>
+              </div>
+              <div>
+                <p className="category">Top category</p>
+                <p className="growth"><img src={label} alt="label" />Music</p>
+              </div>
+            </div>
+          }
+        />
+        <Card />
       </div>
 
       <Chart />
