@@ -1,6 +1,8 @@
 import React from 'react';
 import Task from '../Task/Task'
 import TasksWrapper from './TasksWrapper';
+import Badge from '../Badge/Badge';
+import BadgeList from '../Badge/BadgeList';
 
 const tasksArr = [
   {
@@ -58,12 +60,12 @@ const Tasks = (props) => {
     <TasksWrapper>
       <div className="tasks-header">
         <p className="tasks-length">Your tasks ({tasksArr.length})</p>
-        <ul>
-          <li className="task-status active">All</li>
-          <li className="task-status">Active</li>
-          <li className="task-status">Draft</li>
-          <li className="task-status">Archived</li>
-        </ul>
+        <BadgeList>
+          <Badge text="All" cls="task-status" isActive={true} />
+          <Badge text="Active" cls="task-status" isActive={false} />
+          <Badge text="Draft" cls="task-status" isActive={false} />
+          <Badge text="Archived" cls="task-status" isActive={false} />
+        </BadgeList>
       </div>
 
       {tasksArr.map((item, index) => {

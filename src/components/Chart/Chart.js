@@ -1,6 +1,8 @@
 import React from 'react';
 import {Line} from 'react-chartjs-2'
 import ChartWrapper from './ChartWrapper'
+import Badge from '../Badge/Badge';
+import BadgeList from '../Badge/BadgeList';
 
 const Chart = (props) => {
   const data = {
@@ -45,13 +47,14 @@ const Chart = (props) => {
           <li>Views</li>
         </ul>
 
-        <ul>
-          <li className="chart-time">Today</li>
-          <li className="chart-time">Week</li>
-          <li className="chart-time active">Month</li>
-          <li className="chart-time">Quarter</li>
-          <li className="chart-time">Year</li>
-        </ul>
+
+        <BadgeList>
+          <Badge text="Today" cls="chart-time" isActive={false} />
+          <Badge text="Week" cls="chart-time" isActive={false} />
+          <Badge text="Month" cls="chart-time" isActive={true} />
+          <Badge text="Quarter" cls="chart-time" isActive={false} />
+          <Badge text="Year" cls="chart-time" isActive={false} />
+        </BadgeList>
       </div>
       <hr />
       <Line data={data} options={options} />
